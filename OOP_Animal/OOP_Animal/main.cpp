@@ -3,6 +3,10 @@
 
 using namespace std;
 
+class Zoo {
+
+};
+
 class Animal {
 public:
 	string name;
