@@ -98,19 +98,19 @@ Animal* createRandomAnimal() {
 	int random = rand() % 3;
 
 	if (random == 0) {
-		Dog* dog = new Dog();
+		Dog* dog = new Dog("강아지");
 
 		animal = dog;
 	}
 
 	else if (random == 1) {
-		Cat* cat = new Cat();
+		Cat* cat = new Cat("고양이");
 
 		animal = cat;
 	}
 
 	else if (random == 2) {
-		Cow* cow = new Cow();
+		Cow* cow = new Cow("소");
 
 		animal = cow;
 	}
@@ -146,6 +146,10 @@ int main() {
 	zoo.addAnimal(random_animal1);
 	zoo.addAnimal(random_animal2);
 	zoo.addAnimal(random_animal3);
+
+	cout << endl;
+
+	zoo.performActions();
 
 	return 0;
 }
